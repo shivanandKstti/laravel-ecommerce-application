@@ -1,0 +1,19 @@
+-------------------- Auto-Git Log --------------------
+		Sun Jan 10 2021 21:34:51 GMT+0530 (India Standard Time)
+------------------------------------------------------
+
+Modified files:
+
+
+Created files:
+* .autogit/logs/log-10-0-2021-21-4-45.txt
+* app/Models/Category.php
+* database/factories/CategoryFactory.php
+* database/migrations/2021_01_10_154206_create_categories_table.php
+* database/seeders/CategoriesTableSeeder.php
+
+
+Deleted files:
+
+
+Renamed files:
