@@ -1,0 +1,25 @@
+-------------------- Auto-Git Log --------------------
+		Sun Jan 10 2021 20:34:38 GMT+0530 (India Standard Time)
+------------------------------------------------------
+
+Modified files:
+* app/Http/Controllers/Admin/SettingController.php
+* app/Http/Controllers/BaseController.php
+* app/Models/Setting.php
+* app/Traits/FlashMessages.php
+
+
+Created files:
+* .autogit/logs/log-10-0-2021-20-4-35.txt
+* resources/views/admin/settings/includes/analytics.blade.php
+* resources/views/admin/settings/includes/footer_seo.blade.php
+* resources/views/admin/settings/includes/general.blade.php
+* resources/views/admin/settings/includes/logo.blade.php
+* resources/views/admin/settings/includes/payments.blade.php
+* resources/views/admin/settings/includes/social_links.blade.php
+
+
+Deleted files:
+
+
+Renamed files:
