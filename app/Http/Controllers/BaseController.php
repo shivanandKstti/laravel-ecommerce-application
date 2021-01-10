@@ -37,7 +37,7 @@ class BaseController extends Controller
     protected function responseRedirect($route, $message, $type = 'info', $error = false, $withOldInputWhenError = false)
     {
         $this->setFlashMessage($message, $type);
-        $this->showFlashMessages();
+        $this->showFlashMessage();
 
         if ($error && $withOldInputWhenError) {
             return redirect()->back()->withInput();
@@ -49,7 +49,7 @@ class BaseController extends Controller
     protected function responseRedirectBack($message, $type = 'info', $error = false, $withOldInputWhenError = false)
     {
         $this->setFlashMessage($message, $type);
-        $this->showFlashMessages();
+        $this->showFlashMessage();
 
         return redirect()->back();
     }
