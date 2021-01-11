@@ -19,7 +19,7 @@
                                 <th> # </th>
                                 <th> Name </th>
                                 <th> Slug </th>
-                                <th class="text-center"> Parent </th>
+                                {{-- <th class="text-center"> Parent </th> --}}
                                 <th class="text-center"> Featured </th>
                                 <th class="text-center"> Menu </th>
                                 <th class="text-center"> Order </th>
