@@ -57,4 +57,36 @@ class CategoryController extends BaseController
         $this->setPageTitle('Categories', 'Edit Category : '.$targetCategory->name);
         return view('admin.categories.edit', compact('categories', 'targetCategory'));
     }
+
+    public function update(Request $request)
+    {
+        $this->validate($request, [
+            'name'      => 'required|max:191',
+            'parent_id' => 'required|not_in:0',
+            'image'     => 'mimes:jpg,jpeg,png|max:1000'
+        ]);
+
+        $params = $request->except('_token');
+
+        $category = $this->categoryRepository->updateCategory($params);
+
+        if (!$category) {
+            # code...
+            return $this->responseRedirectBack('Error occured while updating category.' , 'error', true, true);
+        }
+
+        return $this->responseRedirectBack('Category updated successfully', 'success', false, false);
+    }
+
+    public function delete($id)
+    {
+        $category = $this->categoryRepository->deleteCategory($id);
+
+        if (!$category) {
+            # code...
+            return $this->responseRedirectBack('Error occured while deleting category.' , 'error', true, true);
+        }
+
+        return $this->responseRedirectBack('admin.categories.index', 'Category deleted successfully' ,'success',false, false);
+    }
 }
